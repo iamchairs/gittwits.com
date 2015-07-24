@@ -1,0 +1,74 @@
+#feed-container {
+  margin-top: 15px;
+
+  #twit-list {
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0px #4dc9f9;
+    border-radius: 3px;
+
+    .twit {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      border-top: 1px solid #eee;
+      position: relative;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      .twit-image {
+        width: 50px;
+        position: absolute;
+        left: -15px;
+        top: 0px;
+        bottom: 0px;
+
+        img {
+          width: 38px;
+          margin: 6px;
+        }
+      }
+
+      .twit-body {
+        padding: 6px;
+        position: relative;
+        left: 35px;
+
+        .twit-body-header {
+          margin-bottom: 8px;
+          width: 100%;
+          color: #888;
+
+          .twit-name {
+            margin-right: 8px;
+          }
+
+          .twit-time {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  #twit-analytics {
+    .twit-analytics-box {
+      background-color: #fff;
+      box-shadow: 0px 0px 2px 0px #aaa;
+      border-radius: 3px;
+      margin-bottom: 15px;
+
+      .twit-analytics-header {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-color: #eee;
+        padding: 5px 8px;
+        font-size: 16px;
+      }
+
+      .twit-analytics-body {
+        padding: 8px;
+      }
+    }
+  }
+}

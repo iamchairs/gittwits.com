@@ -1,0 +1,17 @@
+#feed-container(class='container')
+
+  #twit-list(class='col-sm-9')
+    .twit(ng-repeat="twit in FeedVM.twits track by twit.commentId")
+      .twit-image
+        img(ng-src='{{::twit.Author.avatarUrl}}')
+      .twit-body
+        .twit-body-header
+          span.twit-name
+            a(ng-href='{{::twit.Author.url}}') {{::twit.Author.username}}
+          span.twit-time {{::FeedVM.relativeTime(twit.time)}}
+        .twit-body-content(twit='::twit.message')
+
+  #twit-analytics(class='col-sm-3')
+    .twit-analytics-box
+      .twit-analytics-header Trends
+      .twit-analytics-body Maybe

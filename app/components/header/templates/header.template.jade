@@ -1,0 +1,10 @@
+#header
+  ul#menu
+      li.menu-item
+        a(ui-sref='root.feed({s: null})' ui-sref-opts='::{reload: true}') GitTwits
+      li.menu-item
+        a(ui-sref='root.about' ui-sref-opts='::{reload: true}') What is This?
+
+    div#search
+      form.form(ng-submit="::HeaderVM.search()")
+        input.form-control(placeholder='Search GitTwits', ng-model="::HeaderVM.searchString")
