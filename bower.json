@@ -1,6 +1,7 @@
 {
   "name": "gittwits.com",
   "version": "0.0.0",
+  "homepage": "https://github.com/iamchairs/gittwits.com",
   "authors": [
     "Micah Williamson <micahwllmsn@gmail.com>"
   ],
@@ -14,10 +15,9 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.3",
-    "bootstrap": "~3.3.5",
-    "angular-ui-router": "~0.2.15",
     "angular-resource": "~1.4.3",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
     "moment": "~2.10.3"
   }
 }
