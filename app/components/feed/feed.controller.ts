@@ -28,7 +28,9 @@ module Feed {
       } else if (diff < 60*60*24) {
         english = 'hours';
       } else if (diff < 60*60*24*31) {
-        english = 'months';
+        english = 'days';
+      } else if (diff < 60*60*24*365) {
+	english = 'months';
       } else {
         english = 'years';
       }
