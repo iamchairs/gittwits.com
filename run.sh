@@ -1,1 +1,1 @@
-DEBUG=myapp npm start
+DEBUG=myapp npm start 1>/dev/null 2>/dev/null &
