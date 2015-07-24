@@ -20,15 +20,18 @@ router.get('/', function(req, res, next) {
     where = [field + ' like ?', '%' + search + '%'];
   }
 
-  database.Twit.findAll({where: where, include: [
-    {model: database.Twit.User, as: 'Author'}
-  ]}).then(function(dbRes) {
-    for(var i = 0; i < dbRes.length; i++) {
-      result.push(dbRes[i].dataValues);
-    }
+  database.Twit.findAll({
+    where: where,
+    order: [['time', 'DESC']],
+    include: [
+      {model: database.Twit.User, as: 'Author'}
+    ]}).then(function(dbRes) {
+      for(var i = 0; i < dbRes.length; i++) {
+        result.push(dbRes[i].dataValues);
+      }
 
-    res.send(result);
-  });
+      res.send(result);
+    });
 });
 
 module.exports = router;
