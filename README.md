@@ -6,12 +6,10 @@ gittwits.com
 You will need gulp to run dev tasks. If you don't have gulp installed already, install it first.
 
 ```
-npm install gulp -g
-```
-
-```
 git clone https://github.com/iamchairs/gittwits.com.git
 cd gittwits.com
+npm install
+bower install
 ```
 
 # Develop
